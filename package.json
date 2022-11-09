@@ -1,0 +1,64 @@
+{
+    "name": "@solana/wallet-adapter-nextjs-starter",
+    "version": "0.8.15",
+    "author": "Solana Maintainers <maintainers@solana.foundation>",
+    "repository": "https://github.com/solana-labs/wallet-adapter",
+    "license": "Apache-2.0",
+    "publishConfig": {
+        "access": "public"
+    },
+    "files": [
+        "public",
+        "src",
+        ".editorconfig",
+        ".eslintrc.json",
+        ".gitignore",
+        ".prettierignore",
+        ".prettierrc",
+        "LICENSE",
+        "next.config.js",
+        "next-env.d.ts",
+        "package.json",
+        "README.md",
+        "tsconfig.json"
+    ],
+    "engines": {
+        "node": ">=16"
+    },
+    "scripts": {
+        "clean": "shx rm -rf .next .swc lib",
+        "dev": "NODE_OPTIONS='--inspect' next dev",
+        "ngrok": "ngrok http --region ap 3000",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@metaplex-foundation/js": "^0.17.5",
+        "@metaplex-foundation/mpl-token-metadata": "^2.5.1",
+        "@solana/spl-token": "^0.3.6",
+        "@solana/wallet-adapter-base": "^0.9.18",
+        "@solana/wallet-adapter-react": "^0.15.22",
+        "@solana/wallet-adapter-react-ui": "^0.9.20",
+        "@solana/wallet-adapter-wallets": "^0.19.5",
+        "@solana/web3.js": "^1.66.2",
+        "@stripe/stripe-js": "^1.42.1",
+        "bs58": "^5.0.0",
+        "micro": "^9.4.1",
+        "next": "^12.2.5",
+        "ngrok": "^4.3.3",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "stripe": "^10.17.0"
+    },
+    "devDependencies": {
+        "@types/node-fetch": "^2.6.2",
+        "@types/react": "^18.0.0",
+        "@types/react-dom": "^18.0.0",
+        "eslint": "^8.22.0",
+        "eslint-config-next": "^12.2.5",
+        "prettier": "^2.7.1",
+        "shx": "^0.3.4",
+        "typescript": "~4.7.4"
+    }
+}
